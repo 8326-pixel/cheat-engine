@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cheat Engine — Project</title>
+<meta name="description" content="Project information and source repository for Cheat Engine.">
+<style>
+:root{--bg:#0b1020;--panel:#131a2d;--line:#27324a;--text:#f6f8ff;--muted:#a9b4c8;--a:#7dd3fc;--b:#c4b5fd}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 0,#17335a 0,transparent 35%),radial-gradient(circle at 90% 20%,#30204f 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.65}.wrap{width:min(1000px,92%);margin:auto}header{padding:85px 0 55px}.tag{color:var(--a);font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:.78rem}h1{font-size:clamp(2.8rem,7vw,5rem);line-height:1;margin:14px 0 20px}h2{font-size:2rem;margin-bottom:10px}p{color:var(--muted)}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{padding:12px 18px;border:1px solid var(--line);border-radius:12px;color:var(--text);background:var(--panel);font-weight:700;text-decoration:none}.btn.primary{background:linear-gradient(135deg,var(--a),var(--b));color:#09101d;border:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 60px}.card{background:rgba(19,26,45,.9);border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin-top:0}.notice{background:rgba(196,181,253,.08);border-left:4px solid var(--b);padding:18px 20px;border-radius:0 14px 14px 0;margin:20px 0 55px}.code{background:#060a13;border:1px solid var(--line);border-radius:14px;padding:18px;overflow:auto;font:14px ui-monospace,SFMono-Regular,Menlo,monospace;color:#dbe7f7}footer{margin-top:50px;padding:30px 0 55px;border-top:1px solid var(--line);color:#8492a8}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="tag">Open-source project</div>
+<h1>Cheat Engine</h1>
+<p>This page is a lightweight project portal for the <strong>8326-pixel/cheat-engine</strong> repository. The original project is a native Windows development environment focused on game and application modding for personal use.</p>
+<div class="buttons">
+<a class="btn primary" href="https://github.com/8326-pixel/cheat-engine">View GitHub repository</a>
+<a class="btn" href="https://github.com/8326-pixel/cheat-engine/blob/master/README.md">Read the README</a>
+</div>
+</div>
+</header>
+<main class="wrap">
+<div class="grid">
+<div class="card"><h3>Native application</h3><p>The repository is built for Windows rather than running as JavaScript in a browser.</p></div>
+<div class="card"><h3>Lazarus / Pascal</h3><p>The README documents building the main project with Lazarus and Free Pascal.</p></div>
+<div class="card"><h3>Large codebase</h3><p>The fork contains the main application source together with supporting native components.</p></div>
+</div>
+<section>
+<h2>Why it isn't deployed as a browser app</h2>
+<p>Web hosting platforms such as Vercel, Netlify and GitHub Pages serve web assets. They cannot execute a Windows desktop executable, DLLs or kernel-level components inside the browser. Because of that, deploying this repository directly as a website would produce a broken or misleading page.</p>
+<div class="notice"><strong>Live web version:</strong> this page is documentation only. It does not emulate or run the native application in the browser.</div>
+</section>
+<section>
+<h2>Project structure</h2>
+<div class="code">Cheat Engine/   — main application source
+DBKKernel/      — native kernel-related component
+DBVM UEFI/      — UEFI-related project files
+dbvm/           — low-level component sources
+lua/            — Lua-related sources
+.github/        — repository automation</div>
+</section>
+<section>
+<h2>Build information</h2>
+<p>The upstream README describes opening <code>cheatengine.lpi</code> in Lazarus and compiling the project on Windows. Additional native projects can be built separately depending on the features required.</p>
+<div class="buttons"><a class="btn primary" href="https://github.com/8326-pixel/cheat-engine/blob/master/README.md#basic-build-instructions">Open build instructions</a></div>
+</section>
+</main>
+<footer><div class="wrap">Project portal for <a href="https://github.com/8326-pixel/cheat-engine">8326-pixel/cheat-engine</a>.</div></footer>
+</body>
+</html>
